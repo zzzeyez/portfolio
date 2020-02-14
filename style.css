@@ -1,0 +1,95 @@
+html {
+  min-height: 100%;
+  min-width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@font-face {
+    font-family: 'lemonmedium';
+    src: url('lemon-webfont.woff2') format('woff2'),
+         url('lemon-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+:root {
+	--font-size: 24px;
+	--h1-size: 180px;
+}
+
+body {
+	font-family: lemonmedium;
+	font-size: var(--font-size);
+	letter-spacing: 0px;
+	line-height: var(--font-size);
+	background: #fff;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	font-smooth: never;
+	-webkit-font-smoothing : none;
+}
+
+#main {
+	position: fixed;
+	z-index: 99;
+	left; 0px;
+	bottom: 0;
+	color: #000;
+	height: auto;
+	padding: 20px;
+	margin:20px;
+	background: #fff;
+}
+
+#content {
+}
+
+img {
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	max-width: 100%;
+	max-height: 100%;
+	margin: auto;
+	overflow: auto;
+}
+
+#wrapper {
+	background-color:#fff;
+}
+
+a {
+	text-decoration:none;
+	color: #333;
+}
+
+a:hover {
+	color: #ffaaaa;
+}
+
+
+ul li {
+	padding: 0px;
+	margin: 0px;
+	list-style-type:none;
+	width: auto;
+	display: block;
+}
+
+h1 {
+	padding: 0px;
+	margin: 0px;
+	font-size: var(--h1-size);
+	line-height: var(--h1-size);
+}
