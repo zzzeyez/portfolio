@@ -1,6 +1,6 @@
 :root {
-	--font-size: 100px;
-	--h1-size: 100px;
+  --font-size: 60px;
+  --h1-size: 60px;
 }
 
 html {
@@ -17,73 +17,77 @@ html {
 }
 
 @font-face {
-    font-family: 'lemonmedium';
-    src: url('lemon-webfont.woff2') format('woff2'),
-         url('lemon-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: "lemonmedium";
+  src: url("lemon-webfont.woff2") format("woff2"),
+    url("lemon-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
-	font-family: lemonmedium;
-	font-size: var(--font-size);
-	letter-spacing: 0px;
-	line-height: var(--font-size);
-	background: #fff;
-	width: 100%;
-	height: 100%;
-	margin: 0px;
-	padding: 0px;
-	font-smooth: never;
-	-webkit-font-smoothing : none;
+  font-family: lemonmedium;
+  font-size: var(--font-size);
+  letter-spacing: 0px;
+  line-height: var(--font-size);
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  /*font-smooth: never;*/
+  -webkit-font-smoothing: none;
 }
 
 .main {
-	position: relative;
-	/*z-index: 99;*/
-	left; 0px;
-	bottom: 0;
-	color: #000;
-	height: auto;
-	padding: 20px;
-	margin:20px;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  top: 50%;
+  color: #000;
+  height: auto;
+  padding: 20px;
+  width: 7ch;
+  transform: translate(-50%, -50%);
+  /* margin: 0 auto; */
+  /* margin: 20px; */
 }
 
-#content {
+.photoheader {
+  position: relative;
+  top: 0px;
 }
 
 img {
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	max-width: 100%;
-	max-height: 100%;
-	margin: auto;
-	overflow: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+  overflow: auto;
 }
 
 a {
-	text-decoration:none;
-	color: #333;
+  text-decoration: none;
+  color: #333;
 }
 
 a:hover {
-	color: #ffaaaa;
+  color: #ffaaaa;
 }
 
 ul li {
-	padding: 0px;
-	margin: 0px;
-	list-style-type:none;
-	width: auto;
-	display: block;
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+  width: auto;
+  display: block;
 }
 
 h1 {
-	padding: 0px;
-	margin: 0px;
-	font-size: var(--h1-size);
-	line-height: var(--h1-size);
+  padding: 0px;
+  margin: 0px;
+  font-size: var(--h1-size);
+  line-height: var(--h1-size);
 }
